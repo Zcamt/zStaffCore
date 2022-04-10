@@ -1,0 +1,37 @@
+Database:
+  Host: "localhost"
+  Port: 3306
+  Databasename: "bungeecord"
+  Username: "root"
+  Password: "password"
+
+StaffChat:
+  Enabled: true
+  Prefix: "&8&l[&d&lStaffChat&8&l]"
+
+StaffList:
+  Enabled: true
+  Settings:
+    #Header and footer WILL NOT be posted in the chat if they're blank ("") like footer is by default.
+    Header: "=== Stafflist ==="
+    Footer: ""
+  Ranks:
+    #Add as many ranks as you'd like! They'll be shown on the list in the order they appear here, so staff in Example1 will be above those in Example2
+    Example1:
+      Prefix: "&a&lModerator"
+      Staff:
+        - 554b6ee8-75a3-467a-9fea-13d2f5387440
+    Example2:
+      Prefix: "&b&lHelper"
+      Staff:
+        - d3e028c7-e721-48cb-9cf8-40af46e3646c
+    #Empty ranks should look like this:
+    Empty:
+      Prefix: "&b&lEmpty"
+      Staff:
+        -
+
+Report:
+  Enabled: true
+  #Cooldown is in seconds
+  Cooldown: 300
